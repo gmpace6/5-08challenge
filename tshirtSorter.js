@@ -30,6 +30,29 @@ return sJoin + mJoin + lJoin
 }
 console.log(tshirtSorter('lslxsxlmxxssllsms'))
 
-// const tshirtSorter1 = (string) => string.toLowerCase().trim().split("").sort().reverse().join("")
-// console.log(tshirtSorter1("mlsslmmlsslmmsllsss"))
 
+
+const tshirtSorter1 = (string) => string.toLowerCase().trim().split("").sort().reverse().join("")
+console.log(tshirtSorter1("mlsslmmlsslmmsllsss"))
+
+
+
+const sorter = (string) => {
+    let s = ''
+    let m = ''
+    let l = ''
+  
+    for(let i = 0; i < string.length; i++){
+      if(string[i] === 's'){
+        s += string[i]
+      } else if(string[i] === 'm'){
+        m += string[i]
+      } else if(string[i] === 'l'){
+        l += string[i]
+      }
+    }
+  
+    return s + m + l
+  }
+  
+  console.log(sorter('smllms'))
